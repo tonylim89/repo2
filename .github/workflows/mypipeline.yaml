@@ -8,7 +8,11 @@ jobs:
     
     steps:
     - name: echo test
-    - run: echo "hello world"
+      run: echo "hello world"
 
     - name: what is the time on the runner
-    - run: date
+      run: date
+
+    -name: list filesystem
+    run: ls -l /
+    
