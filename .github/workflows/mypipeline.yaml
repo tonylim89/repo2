@@ -7,17 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: echo test
-      run: echo "hello world"
-
-    - name: what is the time on the runner
-      run: date
-
-    - name: list filesystem
-      run: ls -l /
 
     - name: cow saysomething
       uses: mscoutermarsh/cowsays-action@master
       with:
         text: ${{github.ref_name}}
         color: 'red'
+        
+        - name: checkout repo
+          uses: actions/checkout@v3
+
+        - name: list the files in our repo
+          run: ls -l
