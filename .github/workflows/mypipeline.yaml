@@ -12,7 +12,7 @@ jobs:
     - name: cow saysomething
       uses: mscoutermarsh/cowsays-action@master
       with:
-        text: ${{secrets.USERNAME} says {secrets.PASSWORD}}
+        text: ${{vars.USERNAME} says {vars.PASSWORD}}
         color: 'red'
         
     - name: checkout repo
