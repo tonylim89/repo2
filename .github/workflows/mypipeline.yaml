@@ -2,7 +2,7 @@ name: my first workflow
 on:
   push:
       branches:
-      -'feature*'
+      -"feature*"
 
 jobs:
   my_first_pipeline:
