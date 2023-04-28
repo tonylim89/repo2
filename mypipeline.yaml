@@ -7,7 +7,7 @@ jobs:
     runs on: ubuntu-latest
     
     steps:
-    - name: 
+    - name: echo test
     - run: echo "hello world"
 
     - name: what is the time on the runner
