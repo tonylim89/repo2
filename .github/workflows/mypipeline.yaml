@@ -14,8 +14,8 @@ jobs:
         text: ${{github.ref_name}}
         color: 'red'
         
-        - name: checkout repo
-          uses: actions/checkout@v3
+    - name: checkout repo
+      uses: actions/checkout@v3
 
-        - name: list the files in our repo
-          run: ls -l
+    - name: list the files in our repo
+      run: ls -l
