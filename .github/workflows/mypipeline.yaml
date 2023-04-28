@@ -1,15 +1,14 @@
 name: my first workflow
 on:
   push:
-      branches:
-      -"feature*"
+    branches:
+      - "feature*"
 
 jobs:
   my_first_pipeline:
     runs-on: ubuntu-latest
     
     steps:
-
     - name: cow saysomething
       uses: mscoutermarsh/cowsays-action@master
       with:
